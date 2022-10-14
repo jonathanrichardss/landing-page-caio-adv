@@ -106,12 +106,13 @@ main {
   flex-wrap: nowrap;
 }
 
-.section-2 h1 {
+.section-2 h2 {
   font-size: 80px;
   color: black;
   font-family: 'EB Garamond', serif;
   font-weight: 300;
   text-align: center;
+  margin-top: 35px;
 }
 
 .section-2 h3 {
@@ -158,10 +159,11 @@ main {
 .list-container {
   min-height: 270px;
   display: flex;
+  align-items: center;
 }
 
 .lista-atuacao-1 {
-  margin: 20px auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -189,7 +191,7 @@ main {
 }
 
 .lista-atuacao-2 li {
-  margin-bottom: 24px;   
+  margin-bottom: 30px;   
   background-image: url(./assets/circlecheck-removebg-preview.png);
   background-repeat: no-repeat;
   padding-left: 59px;
@@ -448,12 +450,13 @@ font-family: Arial, Helvetica, sans-serif;
     flex-wrap: nowrap;
   }
 
-  .section-2 h1 {
+  .section-2 h2 {
     font-size: 50px;
     color: black;
     font-family: 'EB Garamond', serif;
     font-weight: 300;
     text-align: center;
+    margin: 20px;
   }
 
   .section-2 h3 {
@@ -463,7 +466,8 @@ font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     text-align: left;
     white-space: nowrap;
-    padding: 0px
+    padding: 0px;
+    margin-bottom: 30px;
   }
 
   .div-first-atuacao {
@@ -474,10 +478,14 @@ font-family: Arial, Helvetica, sans-serif;
     min-height: 270px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: left;
 }
 
   .lista-atuacao-1 {
-    margin: 20px auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -486,8 +494,17 @@ font-family: Arial, Helvetica, sans-serif;
     list-style: none;
   }
 
+  .lista-atuacao-1 li {
+   margin-bottom: 24px;   
+   background-image: url(./assets/circlecheck-removebg-preview.png);
+   background-repeat: no-repeat;
+   padding-left: 75px;
+   margin-left: 5px;
+   background-position: 12px;
+}
+
   .lista-atuacao-2  {
-    margin: 20px auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -495,6 +512,15 @@ font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
     list-style: none;
   }
+
+  .lista-atuacao-2 li {
+    margin-bottom: 30px;   
+    background-image: url(./assets/circlecheck-removebg-preview.png);
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    background-position: 5px;
+  }
+  
 
   .section-1 h1 {
     font-size: 50px;
@@ -538,6 +564,29 @@ font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     margin: auto 30px;
     float: left;
+  }
+
+  .section-avaliacoes {
+    max-height: 350px;
+    background-color: white;
+    max-width: 1300px;
+    min-width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: inherit;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 4%;
+  }
+  
+  .section-avaliacoes > h3 {
+    font-size: 20px;
+    margin-bottom: 3%;
+  }
+  
+  .my-slider {
+    padding: 20px;
   }
 }
 

@@ -28,10 +28,13 @@ var slider = tns({
         gutter: 20,
         items: 1
       },
-      700: {
-        edgePadding: 20,
-        gutter: 20,
-        items: 1
+      740: {
+        edgePadding: 10,
+        gutter: 10,
+        items: 1,
+        fixedWidth: 600,
+        autoWidth: true,
+        autoHeight: true,
       },
       900: {
         edgePadding: 20,
