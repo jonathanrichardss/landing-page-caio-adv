@@ -25,28 +25,9 @@ var slider = tns({
     swipeAngle: true,
     preventActionWhenRunning: false,
     responsive: {
-      640: {
-        autoplay: true,
-        axis: 'horizontal',
-        gutter: 0,
-        edgePadding: 0,
-        items: 1,
-        center: true,
-        mode: 'carousel',
-        slideBy: 1,
-        mouseDrag: true,
-        controls: false,
-        autoplayButton: false,
-        autoplayButtonOutput: false,
-        stopButton: false,
-        lazyload: true,
-        loop: true,
-        autoWidth: true,
-        autoHeight: false,
-        touch: true,
-        arrowKeys: true,
-        swipeAngle: true,
-        preventActionWhenRunning: false,
+      340: {
+
+
       },
       740: {
         items: 1,
@@ -60,27 +41,7 @@ var slider = tns({
         center: true
       },
       900: {
-        autoplay: true,
-        axis: 'horizontal',
-        gutter: 0,
-        edgePadding: 0,
-        items: 1,
-        center: true,
-        mode: 'carousel',
-        slideBy: 1,
-        mouseDrag: true,
-        controls: false,
-        autoplayButton: false,
-        autoplayButtonOutput: false,
-        stopButton: false,
-        lazyload: true,
-        loop: true,
-        autoWidth: true,
-        autoHeight: false,
-        touch: true,
-        arrowKeys: true,
-        swipeAngle: true,
-        preventActionWhenRunning: false,
+
       }
     }
   });
