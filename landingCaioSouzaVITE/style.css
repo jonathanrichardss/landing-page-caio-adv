@@ -20,14 +20,14 @@ main {
 
 .header-section {
   width: 100%;
-  min-height: 250px;
+  min-height: 220px;
   display: flex;
   padding: 40px;
   flex-wrap: nowrap;
 }
 
 .header-section * {
-  margin: 0 10px;
+  margin: 0 20px;
   padding: 5px;
   align-items: flex-end;
 }
@@ -39,6 +39,7 @@ main {
   font-weight: 300;
   /* margin-left: 7%; */
   margin-right: 75px;
+  margin-bottom: 80px;
 }
 
 .header-section h3 {
@@ -92,7 +93,8 @@ main {
   font-family: 'EB Garamond', serif;
   font-weight: 300;
   text-align: center;
-  margin: 45px auto;
+  margin: 55px auto;
+  margin-bottom: 70px;
 }
 
 .section-1 h3 {
@@ -272,11 +274,13 @@ main {
 .quem-somos-container h1 {
   text-align: left;
   font-size: 50px;
+  color: white;
 }
 
 
 .quem-somos-container p {
   font-size: 33px;
+  color: white;
 }
 
 .quem-somos-container * {
@@ -300,7 +304,7 @@ main {
   width: 100%;
   min-height: 250px;
   background-color: #141414;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 15px;
   color: white;
   font-family: 'EB Garamond', serif;
@@ -316,6 +320,7 @@ main {
 
 .entreEmContato p{
 font-family: Arial, Helvetica, sans-serif;
+font-size: 25px
 }
 
 .my-footer {
@@ -441,7 +446,7 @@ font-family: Arial, Helvetica, sans-serif;
   transform: scale(1.1);
 }
 
-@media only screen and (max-width: 740px) and (min-width: 360px) {
+@media only screen and (max-width: 740px) and (min-width: 320px) {
   body {
     display: block;
     width: 100%;
@@ -469,9 +474,12 @@ font-family: Arial, Helvetica, sans-serif;
     justify-content: left;
     flex-wrap: wrap;
     margin-right: 100px;
+    padding: 15px;
   }
 
   .header-section * {
+    margin: auto 0;
+    padding: 5px;
     align-items: flex-start;
   }
 
@@ -484,6 +492,7 @@ font-family: Arial, Helvetica, sans-serif;
     min-width: 200px;
     padding: 10px;
     margin: 35px -35px;
+    margin-bottom: 0;
   }
 
     
@@ -512,7 +521,7 @@ font-family: Arial, Helvetica, sans-serif;
   .section-2 {
     min-width: 100%;
     min-height: 250px;
-    background-color: #727272;
+    background-color: #8f8f8f;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -521,7 +530,7 @@ font-family: Arial, Helvetica, sans-serif;
 
   .section-2 h2 {
     font-size: 40px;
-    color: black;
+    color: white;
     font-family: 'EB Garamond', serif;
     font-weight: 300;
     text-align: center;
@@ -530,7 +539,7 @@ font-family: Arial, Helvetica, sans-serif;
 
   .section-2 h3 {
     font-size: 20px;
-    color: black;
+    color: white;
     font-family: 'EB Garamond', serif;
     font-weight: 300;
     text-align: left;
@@ -545,19 +554,21 @@ font-family: Arial, Helvetica, sans-serif;
   }
 
   .div-second-atuacao {
-    width: 350px;
+    width: 320px;
     padding: 0px;
     letter-spacing: 1px;
-    text-align: left;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 
   .div-second-atuacao h3 {
     padding: 20px;
-    margin: 0 auto;
+    margin: 10px auto;
     letter-spacing: 1px;
+    font-size: 20px;
   }
   
   
@@ -651,7 +662,7 @@ font-family: Arial, Helvetica, sans-serif;
   
   .lista-diferencial p {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     margin: auto 20px;
     white-space: nowrap;
   }
@@ -664,7 +675,7 @@ font-family: Arial, Helvetica, sans-serif;
   }
 
   .entreEmContato {
-
+    
   }
 
   .entreEmContato h3{
@@ -690,9 +701,9 @@ font-family: Arial, Helvetica, sans-serif;
   }
   
   .section-avaliacoes > h3 {
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 3%;
-    margin-right: 25px;
+    margin-right: 0px;
     padding: 20px;
   }
   
@@ -711,7 +722,6 @@ font-family: Arial, Helvetica, sans-serif;
   .tns-item * {
     padding-right: 15px;
     margin: 10px;
-    border: 1px solid aqua;
     min-width: 100%;
     max-width: 1000px;
     height: 50px;
@@ -737,12 +747,14 @@ font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-align: left;
     margin-bottom: 30px;
+    color: white;
   }
   
   
   .quem-somos-container p {
     font-size: 15px;
     padding: 0;
+    color: white;
   }
   
   .quem-somos-container * {
