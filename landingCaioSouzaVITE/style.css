@@ -22,13 +22,14 @@ main {
   width: 100%;
   min-height: 250px;
   display: flex;
-  justify-content: space-between;
+  padding: 40px;
   flex-wrap: nowrap;
 }
 
 .header-section * {
   margin: 0 10px;
   padding: 5px;
+  align-items: flex-end;
 }
 
 .header-section h1 {
@@ -37,6 +38,7 @@ main {
   font-family: 'EB Garamond', serif;
   font-weight: 300;
   /* margin-left: 7%; */
+  margin-right: 75px;
 }
 
 .header-section h3 {
@@ -44,9 +46,8 @@ main {
   font-family: 'EB Garamond', serif;
 }
 
-.header-section div {
-  background-color: white;
-  border: 1px solid red;  
+.header-section div:first-child {
+  display: flex;
 }
 
 .div-logoprincipal {
@@ -57,7 +58,7 @@ main {
 .div-balanca {
   width: 100%;
   min-height: fit-content;
-  text-align: center;
+  text-align: left;
 }
 
 .logo-principal {
@@ -65,28 +66,37 @@ main {
 }
 
 .logo-balanca {
-  min-width: 250px;
+  min-width: 200px;
 }
 
 /* section 1 */
 
-.section-1 div {
+.section-1 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section-1 div {
+  width: 1200px;
   min-height: 250px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .section-1 h1 {
-  font-size: 80px;
+  font-size: 85px;
   color: black;
   font-family: 'EB Garamond', serif;
   font-weight: 300;
   text-align: center;
+  margin: 45px auto;
 }
 
 .section-1 h3 {
-  font-size: 37px;
+  font-size: 35px;
   margin-top: 3px;
   color: black; 
   font-family: 'EB Garamond', serif;
@@ -98,8 +108,7 @@ main {
 .section-2 {
   width: 100%;
   min-height: 250px;
-  background-color: #727272;
-  border: 1px solid red;
+  background-color: #726d6d;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -113,10 +122,11 @@ main {
   font-weight: 300;
   text-align: center;
   margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 .section-2 h3 {
-  font-size: 37px;
+  font-size: 35px;
   color: black;
   font-family: 'EB Garamond', serif;
   font-weight: 300;
@@ -124,17 +134,27 @@ main {
 }
 
 .div-first-atuacao {
-  text-align: start;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
-.div-first-atuacao h3 {
-  position: static;
-  padding: 20px;
+.div-second-atuacao {
+  width: 1200px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.div-second-atuacao h3 {
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
 
 .section-avaliacoes {
-  min-height: 250px;
+  min-height: 270px;
   background-color: white;
   max-width: 1300px;
   min-width: 100%;
@@ -143,17 +163,30 @@ main {
   flex-direction: column;
   flex-wrap: inherit;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 4%;
 }
 
 .section-avaliacoes > h3 {
   font-size: 40px;
-  margin-bottom: 3%;
+  margin-bottom: 35px;
 }
 
 .my-slider {
   padding: 20px;
+  min-height: 250px;
+}
+
+.tns-item {
+  margin-top: 30px;
+  padding: 20px;
+  min-height: 250px;
+  min-width: 900px;
+}
+
+.tns-item * {
+  min-height: 90px;
+  margin: 10px;
 }
 
 .list-container {
@@ -163,7 +196,7 @@ main {
 }
 
 .lista-atuacao-1 {
-  margin: 10px auto;
+  margin: 15px auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -181,11 +214,12 @@ main {
 }
 
 .lista-atuacao-2  {
-  margin: 20px auto;
+  margin: 15px auto;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  font-size: 30px;
+  font-size: 35px;
   flex-wrap: wrap;
   list-style: none;
 }
@@ -212,7 +246,7 @@ main {
 .lista-diferencial p {
   font-size: 40px;
   text-align: left;
-  margin-left: 18%;
+  margin-left: 22%;
 }
 
 .lista-diferencial img {
@@ -237,6 +271,7 @@ main {
 
 .quem-somos-container h1 {
   text-align: left;
+  font-size: 50px;
 }
 
 
@@ -264,20 +299,19 @@ main {
 .entreEmContato {
   width: 100%;
   min-height: 250px;
-  background-color: black;
-  border: 1px solid red;
+  background-color: #141414;
   font-size: 20px;
-  margin-top: 3px;
+  margin-top: 15px;
   color: white;
   font-family: 'EB Garamond', serif;
   font-weight: lighter;
   text-align: center;
   justify-self: left;
-  
 }
 
 .entreEmContato h3{
   margin: 30px auto;
+  padding: 20px;
 }
 
 .entreEmContato p{
@@ -288,7 +322,6 @@ font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   min-height: 50px;
   background-color: rgb(255, 255, 255);
-  border: 1px solid red;  
   font-size: 20px;
   font-family: 'EB Garamond', serif;
   font-weight: lighter;
@@ -332,7 +365,6 @@ font-family: Arial, Helvetica, sans-serif;
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  border: 1px solid red;
   margin-top: 1%;
 }
 
@@ -411,15 +443,14 @@ font-family: Arial, Helvetica, sans-serif;
 
 @media only screen and (max-width: 740px) and (min-width: 360px) {
   body {
-    background-color: red;
     display: block;
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
   }
 
   body div {
     width: 100%;
-    min-height: 250px;
     margin-top: 3px;
   }
 
@@ -435,15 +466,53 @@ font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     min-height: 250px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-right: 100px;
+  }
+
+  .header-section * {
+    align-items: flex-start;
+  }
+
+  .header-section h1 {
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .logo-principal {
+    min-width: 200px;
+    padding: 10px;
+    margin: 35px -35px;
+  }
+
+    
+  .logo-principal {
+    max-width: 300px;
+  }
+
+  
+  .logo-balanca {
+    min-width: 50px;
+    max-width: 100px;
+  }
+  
+  .div-logoprincipal {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .div-balanca {
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    margin: 5px 225px;
   }
 
   .section-2 {
     min-width: 100%;
     min-height: 250px;
     background-color: #727272;
-    border: 1px solid red;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -451,7 +520,7 @@ font-family: Arial, Helvetica, sans-serif;
   }
 
   .section-2 h2 {
-    font-size: 50px;
+    font-size: 40px;
     color: black;
     font-family: 'EB Garamond', serif;
     font-weight: 300;
@@ -460,19 +529,38 @@ font-family: Arial, Helvetica, sans-serif;
   }
 
   .section-2 h3 {
-    font-size: 22px;
+    font-size: 20px;
     color: black;
     font-family: 'EB Garamond', serif;
     font-weight: 300;
     text-align: left;
-    white-space: nowrap;
+    white-space: wrap;
     padding: 0px;
     margin-bottom: 30px;
   }
 
   .div-first-atuacao {
     margin: 0 auto;
+    text-align: center;
   }
+
+  .div-second-atuacao {
+    width: 350px;
+    padding: 0px;
+    letter-spacing: 1px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-second-atuacao h3 {
+    padding: 20px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+  }
+  
+  
 
   .list-container {
     min-height: 270px;
@@ -485,11 +573,12 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
   .lista-atuacao-1 {
-    margin: 10px auto;
+    margin: 5px;
+    margin-right: 45px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    font-size: 25px;
+    gap: 5px;
+    font-size: 20px;
     flex-wrap: wrap;
     list-style: none;
   }
@@ -504,11 +593,12 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
   .lista-atuacao-2  {
-    margin: 10px auto;
+    margin: 5px;
+    margin-right: 45px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    font-size: 25px;
+    gap: 5px;
+    font-size: 20px;
     flex-wrap: wrap;
     list-style: none;
   }
@@ -523,7 +613,7 @@ font-family: Arial, Helvetica, sans-serif;
   
 
   .section-1 h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: black;
     font-family: 'EB Garamond', serif;
     font-weight: 300;
@@ -539,6 +629,13 @@ font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     justify-self: left;
   }
+
+  .section-1 div {
+    width: 390px;
+    min-height: 250px;
+    background-color: white;
+  }
+  
 
   .lista-diferencial {
     gap: 10px;
@@ -566,27 +663,222 @@ font-family: Arial, Helvetica, sans-serif;
     float: left;
   }
 
+  .entreEmContato {
+
+  }
+
+  .entreEmContato h3{
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .entreEmContato p {
+    font-size: 18px;
+  }
   .section-avaliacoes {
-    max-height: 350px;
-    background-color: white;
-    max-width: 1300px;
-    min-width: 100%;
+    min-height: 400px;
+    max-width: 300px;
     display: flex;
     text-align: center;
     flex-direction: column;
-    flex-wrap: inherit;
-    justify-content: center;
-    padding: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 4%;
+    margin: 0;
+    padding: 0px;
+    overflow: auto;
   }
   
   .section-avaliacoes > h3 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 3%;
+    margin-right: 25px;
+    padding: 20px;
   }
   
   .my-slider {
     padding: 20px;
+    min-height: 100px;
+  }
+
+  .tns-item {
+    margin-top: 20px;
+    padding: 5px;
+    min-height: 90px;
+    min-width: 500px;
+  }
+
+  .tns-item * {
+    padding-right: 15px;
+    margin: 10px;
+    border: 1px solid aqua;
+    min-width: 100%;
+    max-width: 1000px;
+    height: 50px;
+  }
+
+  .quem-somos-container {
+    display: flex;
+    padding: 4px;
+    margin: 50px auto;
+    min-height: 220px;
+  }
+
+  
+  .quem-somos-container img {  
+    align-self: center;
+    max-width: fit-content;
+    min-width: 120px;
+    max-height: 120px;
+    margin-top: 20px;
+  }
+  
+  .quem-somos-container h1 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  
+  .quem-somos-container p {
+    font-size: 15px;
+    padding: 0;
+  }
+  
+  .quem-somos-container * {
+    padding: 15px;
+  }
+  
+  .quem-somos-inside-container * {
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .quem-somos-inside-container p {
+    
+  }
+
+  .my-footer {
+    width: 100%;
+    min-height: 650px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .my-footer > div > img {
+    max-width: 350px;
+    padding: 30px;
+  }
+  
+  .my-footer > div > ul > li > a > img {
+    min-width: 15px;
+    max-width: 25px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    transition: transform .3s;
+  }
+  
+  .my-footer > div > ul > li > p {
+    float: right;
+    margin-top: 6%;
+  }
+  
+  
+  .socialmedia-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    color: white;
+  }
+  
+  .mainlogo-ftr {
+    margin-bottom: 20px;
+  }
+  
+  .endereco-ftr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 1%;
+  }
+  
+  .endereco-ftr > h3 {
+    margin-left: 4%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    font-size: 20px;
+  }
+  
+  
+  .endereco-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    justify-content: center;
+    text-align: left;
+    font-size: ;
+  }
+  
+  .local_item {
+    text-align-last: left;
+  }
+  
+  .local-text {
+  }
+  
+  .local-logo {
+    padding-top: 4%;
+  }
+  
+  .email-logo {
+    
+  }
+  
+  .email {
+    
+  }
+  
+  
+  .endereco-ftr > ul > li > img {
+    min-width: 15px;
+    max-width: 25px;
+    margin: 15px;
+  }
+  
+  /* imagens */
+  
+  .logo_souza_advocacia {
+    align-items: flex-end;
+  }
+  
+  .whats_logo {
+    max-width: 110px;
+    max-height: 110px;
+    transition: transform .3s;
+  }
+  
+  .whats_logo:hover {
+    transform: scale(1.1); 
+  }
+  
+  .insta-logo:hover {
+    content: url(./assets/icons/icons8-instagram.svg);
+    transform: scale(1.1);
+  }
+  
+  .youtube-logo:hover {
+    content: url(./assets/icons/icons8-reproduzir-youtube.svg);
+    transform: scale(1.1);
   }
 }
 
