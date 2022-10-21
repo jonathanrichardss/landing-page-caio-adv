@@ -4,7 +4,7 @@ import {tns} from './src/tiny-slider.js';
 var slider = tns({
     container: '.my-slider',
     autoplay: true,
-    axis: 'horizontal',
+    axis: 'vertical',
     gutter: 0,
     edgePadding: 0,
     items: 1,
@@ -17,7 +17,7 @@ var slider = tns({
     autoplayButtonOutput: false,
     stopButton: false,
     lazyload: true,
-    loop: true,
+    loop: false,
     autoWidth: true,
     autoHeight: false,
     touch: true,
