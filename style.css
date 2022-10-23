@@ -272,7 +272,7 @@ main {
 
 .quem-somos-container {
   display: flex;
-  padding: 20px 185px;
+  padding: 20px 32px;
   margin: 0 auto;
 }
 
@@ -520,6 +520,7 @@ a {
   .header-section * {
     margin: 0 auto;
     padding: 10px;
+    margin: 10px;
   }
 
   .header-section h1 {
@@ -817,7 +818,7 @@ a {
     padding: 0;
     margin-bottom: 15px;
     color: white;
-    white-space: nowrap;
+    white-space: wrap;
   }
   
   .quem-somos-container * {
@@ -1134,8 +1135,20 @@ a {
 
 .quem-somos-container {
   padding: 20px 32px;
+  background-color: red;
 }
 
+.quem-somos-container p {
+  font-size: 24px;
+  white-space: wrap;
+}
+
+.section-avaliacoes > h3 {
+  font-size: 32px;
+  margin-bottom: 3%;
+  margin-right: 0px;
+  padding: 20px;
+}
 
 
 }
