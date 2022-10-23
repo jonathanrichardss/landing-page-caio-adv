@@ -456,6 +456,11 @@ a {
 
 .logo_souza_advocacia {
   align-items: flex-end;
+  transition: transform .3s;
+}
+
+.logo_souza_advocacia:hover {
+  transform: scale(1.1);
 }
 
 .whats_logo {
@@ -483,7 +488,7 @@ a {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 1200px) and (min-width: 320px) {
+@media screen and (max-width: 900px) and (min-width: 150px) {
   body {
     display: block;
     width: 100%;
@@ -514,8 +519,7 @@ a {
 
   .header-section * {
     margin: 0 auto;
-    padding: 0px;
-    align-items: flex-start;
+    padding: 10px;
   }
 
   .header-section h1 {
@@ -548,7 +552,8 @@ a {
 
   .div-balanca {
     min-width: 20px;
-    text-align: center;
+    text-align: start;
+    max-width: 320px;
   }
 
   .section-2 {
@@ -742,7 +747,6 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 2%;
     padding-right: 100px;
     margin: 0;
     padding: 0px;
@@ -760,15 +764,25 @@ a {
  
   }
 
-  .tns-item {
- 
+  .tns-item:nth-child(8) {
+    width: 0;
+    height: 0;
+  }
+
+  .tns-item:nth-child(10) {
+   width: 0;
+   height: 0;
   }
 
   .tns-item * {
     margin: 1px;
     min-width: 100%;
     max-width: 606px;
-    min-height: 50px;
+    min-height: 4px;
+  }
+
+  .hdrate {
+    content-visibility: hidden;
   }
 
   .quem-somos-container {
@@ -776,15 +790,17 @@ a {
     padding: 4px;
     margin: 50px auto;
     min-height: 220px;
+    max-width: 370px;
   }
 
   
   .quem-somos-container img {  
     align-self: center;
     max-width: fit-content;
-    min-width: 120px;
-    max-height: 120px;
+    min-width: 125px;
+    max-height: 125px;
     margin-top: 20px;
+    padding: 4px;
   }
   
   .quem-somos-container h1 {
@@ -797,9 +813,11 @@ a {
   
   
   .quem-somos-container p {
-    font-size: 15px;
+    font-size: 12px;
     padding: 0;
+    margin-bottom: 15px;
     color: white;
+    white-space: nowrap;
   }
   
   .quem-somos-container * {
@@ -817,7 +835,7 @@ a {
 
   .my-footer {
     width: 100%;
-    min-height: 630px;
+    min-height: 490px;
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: 'EB Garamond', serif;
@@ -924,7 +942,11 @@ a {
   /* imagens */
   
   .logo_souza_advocacia {
-    align-items: flex-end;
+    transition: transform .3s;
+  }
+
+  .logo_souza_advocacia:hover {
+    transform: scale(1.1);
   }
   
   .whats_logo {
@@ -946,6 +968,170 @@ a {
     content: url(./assets/icons/icons8-reproduzir-youtube.svg);
     transform: scale(1.1);
   }
+
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  
+  .header-section {
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .header-section * {
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .header-section h1 {
+    font-size: 65px;
+    margin: 0;
+  }
+
+  .logo-principal {
+    min-width: 200px;
+    padding: 10px;
+    margin: 35px -35px;
+    margin-bottom: 0;
+  }
+
+    
+  .logo-principal {
+    max-width: 500px;
+  }
+
+  
+  .logo-balanca {
+    min-width: 50px;
+    max-width: 200px;
+  }
+  
+  .div-logoprincipal {
+    min-width: 220px;
+    flex-direction: column;
+  }
+
+  .div-balanca {
+    min-width: 20px;
+    text-align: start;
+    max-width: 320px;
+  }
+
+  .section-2 {
+    width: 100%;
+    min-height: 250px;
+    background-color: #726d6d;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .div-second-atuacao {
+    max-width: 900px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-2 h3 {
+    font-size: 30px;
+    color: black;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  .lista-atuacao-1 {
+    margin: 15px auto;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .lista-atuacao-1 li {
+    margin-bottom: 24px;   
+    background-image: url(./assets/circlecheck-removebg-preview.png);
+    background-repeat: no-repeat;
+    padding-left: 59px;
+    background-position: 5px;
+ }
+ 
+ .lista-atuacao-2  {
+  margin: 15px auto;
+  margin-left: 0;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.lista-atuacao-2 li {
+  margin-bottom: 30px;   
+  background-image: url(./assets/circlecheck-removebg-preview.png);
+  background-repeat: no-repeat;
+  padding-left: 59px;
+  background-position: 5px;
+}
+
+#areaDiferencial {
+  max-width: 900px;
+  align-items: baseline;
+}
+
+.lista-diferencial {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.lista-diferencial h3 {
+}
+
+.lista-diferencial p {
+  font-size: 35px;
+  text-align: start;
+  margin-bottom: 5px;
+  margin-left: 200px;
+  margin-right: 0;
+  white-space: wrap;
+}
+
+.diferTitle {
+  font-size: 75px;
+  margin: 13px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 200px;
+  color: black; 
+  font-family: 'EB Garamond', serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+.lista-diferencial img {
+  max-width: 150px;
+  justify-content: center;
+  margin: auto 20px;
+  float: left;
+}
+
 
 
 }
