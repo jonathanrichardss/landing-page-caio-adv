@@ -51,13 +51,13 @@ main {
 }
 
 .div-logoprincipal {
-  min-width: 300px;
+  max-width: 800px;
   flex-direction: column;
   align-items: flex-end; 
 }
 
 .div-balanca {
-  min-width: 370px;
+  min-width: 300px;
   min-height: fit-content;
   text-align: left;
 }
@@ -82,9 +82,9 @@ main {
 
 
 .section-1 div {
-  width: 1200px;
   min-height: 900px;
   background-color: white;
+  margin: 0 auto;
 }
 
 .section-1 h1 {
@@ -166,12 +166,12 @@ main {
   flex-wrap: inherit;
   justify-content: center;
   padding: 20px;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
 }
 
 .section-avaliacoes > h3 {
   font-size: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 80px;
 }
 
 .my-slider {
@@ -231,9 +231,13 @@ main {
   background-position: 5px;
 }
 
+#areaDiferencial {
+  max-width: 100%;
+  align-items: baseline;
+}
+
 .lista-diferencial {
   list-style: none;
-  margin: 0;
 }
 
 .lista-diferencial h3 {
@@ -254,7 +258,7 @@ main {
   font-size: 75px;
   text-align: left;
   margin: 13px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   margin-top: 20px;
   color: black; 
   font-family: 'EB Garamond', serif;
@@ -347,8 +351,12 @@ font-size: 25px
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 15px;
+}
+
+.my-footer > div {
+  margin-right: 80px;
 }
 
 .my-footer > div > img {
@@ -880,6 +888,7 @@ a {
   
   .mainlogo-ftr {
     margin-bottom: 20px;
+   
   }
   
   .endereco-ftr {
@@ -1135,7 +1144,6 @@ a {
 
 .quem-somos-container {
   padding: 20px 32px;
-  background-color: red;
 }
 
 .quem-somos-container p {
