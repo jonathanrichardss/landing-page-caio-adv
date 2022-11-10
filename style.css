@@ -315,6 +315,11 @@ main {
 }
 
 
+.hdrate-last {
+  margin-right: 35px;
+}
+
+
 
 /* final section */
 
@@ -523,7 +528,6 @@ a {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: red;
   }
 
   .header-section * {
@@ -791,8 +795,9 @@ a {
     min-height: 4px;
   }
 
-  .hdrate {
+  .hdrate, .hdrate-last {
     content-visibility: hidden;
+
   }
 
   .quem-somos-container {
