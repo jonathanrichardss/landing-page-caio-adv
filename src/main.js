@@ -1,4 +1,4 @@
-import {tns} from './src/tiny-slider.js'; 
+import {tns} from './tiny-slider.js'; 
 
 
 var slider = tns({

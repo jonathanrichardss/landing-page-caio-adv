@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -25,10 +26,30 @@ main {
   padding: 20px;
   flex-wrap: nowrap;
   justify-content: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.header-section::after {
+  content: ' ';
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0px;
+  display: block;
+  position: absolute;
+  /*background-image: url(./assets/header/pexels-andrea-piacquadio-3823493.jpg);*/
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.3;
 }
 
 .header-section * {
-  padding: 0px;
+  padding: 1px;
 }
 
 .header-section h1 {
@@ -39,6 +60,7 @@ main {
   /* margin-left: 7%; */
   margin-right: 75px;
   margin-bottom: 80px;
+  
 }
 
 .header-section h3 {
@@ -48,6 +70,10 @@ main {
 
 .header-section div:first-child {
   display: flex;
+}
+
+.hdrBox {
+  background-color: ;
 }
 
 .div-logoprincipal {
@@ -119,7 +145,7 @@ main {
 
 .section-2 h2 {
   font-size: 80px;
-  color: black;
+  color: white;
   font-family: 'EB Garamond', serif;
   font-weight: 300;
   text-align: center;
@@ -129,7 +155,7 @@ main {
 
 .section-2 h3 {
   font-size: 35px;
-  color: black;
+  color: white;
   font-family: 'EB Garamond', serif;
   font-weight: 300;
   text-align: left;
@@ -202,11 +228,12 @@ main {
   font-size: 35px;
   flex-wrap: wrap;
   list-style: none;
+  color: white;
 }
 
 .lista-atuacao-1 li {
    margin-bottom: 24px;   
-   background-image: url(./assets/circlecheck-removebg-preview.png);
+   background-image: url(../public/images/circlecheck-removebg-preview-white.png);
    background-repeat: no-repeat;
    padding-left: 59px;
    background-position: 5px;
@@ -221,11 +248,12 @@ main {
   font-size: 35px;
   flex-wrap: wrap;
   list-style: none;
+  color: white;
 }
 
 .lista-atuacao-2 li {
   margin-bottom: 30px;   
-  background-image: url(./assets/circlecheck-removebg-preview.png);
+  background-image: url(../public/images/circlecheck-removebg-preview-white.png);
   background-repeat: no-repeat;
   padding-left: 59px;
   background-position: 5px;
@@ -234,6 +262,20 @@ main {
 #areaDiferencial {
   max-width: 100%;
   align-items: baseline;
+  position: relative;
+  isolation: isolate;
+}
+
+#areaDiferencial:before {
+  content: '  ';
+  /*background-image: url(./assets/header/mayor-g68147726d_1920.jpg);*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  inset: 0;
+  opacity: .5;
+  position: absolute;
 }
 
 .lista-diferencial {
@@ -325,7 +367,7 @@ main {
 
 .entreEmContato {
   width: 100%;
-  min-height: 250px;
+  min-height: 270px;
   background-color: #141414;
   font-size: 25px;
   margin-top: 15px;
@@ -334,6 +376,12 @@ main {
   font-weight: lighter;
   text-align: center;
   justify-self: left;
+  position: relative;
+  overflow: auto;
+}
+
+.content {
+
 }
 
 .entreEmContato h3{
@@ -341,9 +389,34 @@ main {
   padding: 20px;
 }
 
+#helpButton {
+  width: 330px;
+  height: 60px;
+  background-color: #23b845;
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid;
+  box-shadow: 0 3px 15px rgba(1, 255, 35, 0.281);
+  padding: 0.25em 0.75em;
+  text-align: center;
+  line-height: 1.1;
+  cursor: pointer;
+}
+
+#helpButton:hover {
+  background-color: #0c7e27;
+}
+
+#helpButton:active {
+  background-color: #0c7e27;
+  width: 325px;
+  height: 58px;
+}
+
 .entreEmContato p{
 font-family: Arial, Helvetica, sans-serif;
-font-size: 25px
+font-size: 22px;
+font-weight: 500;
 }
 
 .my-footer {
@@ -477,9 +550,12 @@ a {
 }
 
 .whats_logo {
+  position: fixed;
   max-width: 130px;
   max-height: 150px;
   transition: transform .3s;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 
 .whats_logo:hover {
@@ -487,17 +563,19 @@ a {
 }
 
 .insta-logo:hover {
-  content: url(./assets/icons/icons8-instagram.svg);
+  -webkit-backface-visibility: hidden;
+  content: url(../public/images/icons/icons8-instagram.svg);
   transform: scale(1.1);
 }
 
 .youtube-logo:hover {
-  content: url(./assets/icons/icons8-reproduzir-youtube.svg);
+  -webkit-backface-visibility: hidden;
+  content: url(../public/images/icons/icons8-reproduzir-youtube.svg);
   transform: scale(1.1);
 }
 
 .local-logo:hover {
-  content: url(./assets/icons/icons8-marcador-80.png);
+  content: url(../public/images/icons/icons8-marcador-80.png);
   transform: scale(1.1);
 }
 
@@ -528,6 +606,25 @@ a {
     display: flex;
     justify-content: center;
     padding: 20px;
+    position: relative;
+  }
+
+  .header-section::after {
+    content: ' ';
+    width: 900px;
+    min-height: 220px;
+    left: 0;
+    top: 0;
+    display: block;
+    position: absolute;
+    /*background-image: url(./assets/header/pexels-fauxels-3184416.jpg);*/
+    background-position: -30px -120px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+    inset: 0;
   }
 
   .header-section * {
@@ -647,7 +744,7 @@ a {
 
   .lista-atuacao-1 li {
    margin-bottom: 24px;   
-   background-image: url(./assets/circlecheck-removebg-preview.png);
+   background-image: url(../public/images/circlecheck-removebg-preview-white.png);
    background-repeat: no-repeat;
    padding-left: 75px;
    margin-left: 5px;
@@ -667,7 +764,7 @@ a {
 
   .lista-atuacao-2 li {
     margin-bottom: 30px;   
-    background-image: url(./assets/circlecheck-removebg-preview.png);
+    background-image: url(../public/images/circlecheck-removebg-preview-white.png);
     background-repeat: no-repeat;
     padding-left: 70px;
     background-position: 5px;
@@ -741,7 +838,7 @@ a {
   }
 
   .entreEmContato {
-   
+   position: relative;
   }
 
   .entreEmContato h3{
@@ -752,6 +849,7 @@ a {
 
   .entreEmContato p {
     font-size: 18px;
+    font-weight: 500;
   }
   .section-avaliacoes {
     min-height: 400px;
@@ -828,7 +926,7 @@ a {
   
   
   .quem-somos-container p {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0;
     margin-bottom: 15px;
     color: white;
@@ -976,12 +1074,12 @@ a {
   }
   
   .insta-logo:hover {
-    content: url(./assets/icons/icons8-instagram.svg);
+    content: url(../public/images/icons/icons8-instagram.svg);
     transform: scale(1.1);
   }
   
   .youtube-logo:hover {
-    content: url(./assets/icons/icons8-reproduzir-youtube.svg);
+    content: url(../public/images/icons/icons8-reproduzir-youtube.svg);
     transform: scale(1.1);
   }
 
@@ -1078,7 +1176,7 @@ a {
 
   .lista-atuacao-1 li {
     margin-bottom: 24px;   
-    background-image: url(./assets/circlecheck-removebg-preview.png);
+    background-image: url(../public/images/circlecheck-removebg-preview-white.png);
     background-repeat: no-repeat;
     padding-left: 59px;
     background-position: 5px;
@@ -1098,7 +1196,7 @@ a {
 
 .lista-atuacao-2 li {
   margin-bottom: 30px;   
-  background-image: url(./assets/circlecheck-removebg-preview.png);
+  background-image: url(../public/images/circlecheck-removebg-preview-white.png);
   background-repeat: no-repeat;
   padding-left: 59px;
   background-position: 5px;
@@ -1164,5 +1262,5 @@ a {
   padding: 20px;
 }
 
-
 }
+
