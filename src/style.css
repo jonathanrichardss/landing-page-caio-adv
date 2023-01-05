@@ -53,14 +53,13 @@ main {
 }
 
 .header-section h1 {
-  font-size: 80px;
+  font-size: 50px;
   color: black;
   font-family: 'EB Garamond', serif;
   font-weight: 300;
   /* margin-left: 7%; */
   margin-right: 75px;
   margin-bottom: 80px;
-  
 }
 
 .header-section h3 {
@@ -73,11 +72,10 @@ main {
 }
 
 .hdrBox {
-  background-color: ;
 }
 
 .div-logoprincipal {
-  max-width: 800px;
+  max-width: 1000px;
   flex-direction: column;
   align-items: flex-end; 
 }
@@ -89,7 +87,7 @@ main {
 }
 
 .logo-principal {
-  min-width: 600px;
+  min-width: 400px;
 }
 
 .logo-balanca {
@@ -227,13 +225,11 @@ main {
   gap: 15px;
   font-size: 35px;
   flex-wrap: wrap;
-  list-style: none;
   color: white;
 }
 
 .lista-atuacao-1 li {
    margin-bottom: 24px;   
-   background-image: url(../public/images/circlecheck-removebg-preview-white.png);
    background-repeat: no-repeat;
    padding-left: 59px;
    background-position: 5px;
@@ -247,13 +243,11 @@ main {
   gap: 15px;
   font-size: 35px;
   flex-wrap: wrap;
-  list-style: none;
   color: white;
 }
 
 .lista-atuacao-2 li {
   margin-bottom: 30px;   
-  background-image: url(../public/images/circlecheck-removebg-preview-white.png);
   background-repeat: no-repeat;
   padding-left: 59px;
   background-position: 5px;
